@@ -1,0 +1,15 @@
+// bem规范(起名字的规范),详见 https://xiaoman.blog.csdn.net/article/details/122832888
+
+/*  
+  BEM实际上是block、element、modifier的缩写，分别为块层、元素层、修饰符层，element UI 也使用的是这种架构
+  BEM 命名约定的模式是：
+  .block {}
+  .block__element {}
+  .block--modifier {}
+*/ 
+
+$namespace:"fsl" !default;  // 类似与elementUi一直是el开头的,我们这边就以fsl开头; !default意思是变量如果没有赋别的值,就会使用fsl这个默认值;
+$block-sel:"-" !default; // bem中的b,用-连接起来的;
+$elem-sel:"__" !default; // bem中的e,用__连接起来的;
+$mod-sel:"--" !default;  // bem中的m,用--连接起来的;
+
